@@ -6,3 +6,6 @@ r <- data.frame(x = 85)
 result <- predict(relation,r)
 result
 plot(x,y,col="blue",main = "Temparature and yield", abline(lm(y~x)),cex= 1.3,pch=16,xlab="Temparature",ylab="Yield")
+fitted(relation)
+residuals(relation)
+plot(relation, which=1)
